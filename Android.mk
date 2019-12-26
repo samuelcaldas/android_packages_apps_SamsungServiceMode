@@ -10,7 +10,8 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_PACKAGE_NAME := SamsungServiceMode
 LOCAL_JAVA_LIBRARIES := telephony-common
 LOCAL_CERTIFICATE := platform
-LOCAL_SDK_VERSION := current
+#LOCAL_SDK_VERSION := current
+LOCAL_PRIVATE_PLATFORM_APIS := true
 
 include $(BUILD_PACKAGE)
 
